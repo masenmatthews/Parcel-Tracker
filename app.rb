@@ -1,7 +1,7 @@
 require('sinatra')
 require('sinatra/reloader')
 require('pry')
-require('./lib/parcels')
+# require('./lib/parcels')
 
 get('/') do
   "This application will calculate shipping costs"
