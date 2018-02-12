@@ -1,21 +1,28 @@
-<h1>Epicodus Postal Service</h1>
+<h4>Send your parcel today</h4>
 
-<form action="/output">
-  <div class="form-group">
-    <label for="length">Enter the length of your box</label>
-    <input id="l" name="length" class="form-control" type="text">
-  </div>
-  <div class="form-group">
-    <label for="width">Enter the width of your box</label>
-    <input id="w" name="width" class="form-control" type="text">
-  </div>
-  <div class="form-group">
-    <label for="heigth">Enter the heigth of your box</label>
-    <input id="h" name="heigth" class="form-control" type="text">
-  </div>
-  <div class="form-group">
-    <label for="weight">Enter the weigth of your box</label>
-    <input id="weight" name="weight" class="form-control" type="text">
-  </div>
-  <button type="submit" class="btn">Go!</button>
+<form  action='/result'>
+  <div class="row">
+    <div class="col-md-6">
+      <h5>Enter dimensions</h5>
+      <div class="form-group">
+        <label for="length">Length</label>
+        <input id="length" name="length" type="text">
+      </div>
+      <div class="form-group">
+        <label for="width">Width</label>
+        <input id="width" name="width" type="text">
+      </div>
+      <div class="form-group">
+        <label for="height">Height</label>
+        <input id="height" name="height" type="text">
+      </div>
+    </div>
+    <!-- <div class="col-md-6">
+      <h5>Enter weight</h5>
+      <div class="form-group">
+        <label for="weight">Weight</label>
+        <input id="weight" name="weight" type="text">
+      </div>
+    </div> -->
+  <button type="submit" class="btn btn-info">Send</button>
 </form>
