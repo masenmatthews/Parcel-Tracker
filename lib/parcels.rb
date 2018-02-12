@@ -13,6 +13,10 @@ class Parcel
   def volume
     (@length * @width * @height)
   end
+
+  def cost_to_ship
+    (@length * @width * @height) * 2
+  end
 end
 
   # def volume(length, width, height)

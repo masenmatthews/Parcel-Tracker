@@ -15,5 +15,6 @@ get('/result') do
   @height = params.fetch("height").to_i
   output = Parcel.new(@length, @width, @height)
   @result = output.volume
+  @result2 = output.cost_to_ship
   erb(:output)
 end
