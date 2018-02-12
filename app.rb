@@ -1,6 +1,7 @@
 require('sinatra')
 require('sinatra/reloader')
 require('pry')
+also_reload('lib/**/*.rb')
 require('./lib/parcels')
 
 get('/') do
@@ -13,6 +14,6 @@ get('/result') do
   @width = params.fetch("width").to_i
   @height = params.fetch("height").to_i
   output = Parcel.new(@length, @width, @height)
-  @result = output.volume(@length, @width, @height)
+  @result = output.volume
   erb(:output)
 end
